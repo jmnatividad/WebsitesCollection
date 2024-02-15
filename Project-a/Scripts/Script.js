@@ -1,22 +1,22 @@
 var bouquetData = [
-    { name: 'bouquetData 1', price: '$10', image: 'Images/WhiteLogo.jpg' },
-    { name: 'bouquetData 2', price: '$15', image: 'Images/WhiteLogo.jpg' },
-    { name: 'bouquetData 3', price: '$20', image: 'Images/WhiteLogo.jpg' },
-    { name: 'bouquetData 4', price: '$25', image: 'Images/WhiteLogo.jpg' },
-    { name: 'bouquetData 5', price: '$30', image: 'Images/WhiteLogo.jpg' },
-    { name: 'bouquetData 6', price: '$35', image: 'Images/WhiteLogo.jpg' },
-    { name: 'bouquetData 7', price: '$35', image: 'Images/WhiteLogo.jpg' },
+    { name: 'bouquetData 1', price: '$10', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'bouquetData 2', price: '$15', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'bouquetData 3', price: '$20', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'bouquetData 4', price: '$25', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'bouquetData 5', price: '$30', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'bouquetData 6', price: '$35', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'bouquetData 7', price: '$35', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
  
     // Add more items as needed
 ];
 
 var weddingData = [
-    { name: 'weddingData 1', price: '$10', image: 'Images/WhiteLogo.jpg' },
-    { name: 'weddingData 2', price: '$15', image: 'Images/WhiteLogo.jpg' },
-    { name: 'weddingData 3', price: '$20', image: 'Images/WhiteLogo.jpg' },
-    { name: 'weddingData 4', price: '$25', image: 'Images/WhiteLogo.jpg' },
-    { name: 'weddingData 5', price: '$30', image: 'Images/WhiteLogo.jpg' },
-    { name: 'weddingData 6', price: '$35', image: 'Images/WhiteLogo.jpg' },
+    { name: 'weddingData 1', price: '$10', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'weddingData 2', price: '$15', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'weddingData 3', price: '$20', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'weddingData 4', price: '$25', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'weddingData 5', price: '$30', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'weddingData 6', price: '$35', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
  
     
     
@@ -24,12 +24,12 @@ var weddingData = [
 ];
 
 var funeralData = [
-    { name: 'funeralData 1', price: '$10', image: 'Images/WhiteLogo.jpg' },
-    { name: 'funeralData 2', price: '$15', image: 'Images/WhiteLogo.jpg' },
-    { name: 'funeralData 3', price: '$20', image: 'Images/WhiteLogo.jpg' },
-    { name: 'funeralData 4', price: '$25', image: 'Images/WhiteLogo.jpg' },
-    { name: 'funeralData 5', price: '$30', image: 'Images/WhiteLogo.jpg' },
-    { name: 'funeralData 6', price: '$35', image: 'Images/WhiteLogo.jpg' },
+    { name: 'funeralData 1', price: '$10', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'funeralData 2', price: '$15', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'funeralData 3', price: '$20', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'funeralData 4', price: '$25', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'funeralData 5', price: '$30', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'funeralData 6', price: '$35', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
  
 
     // Add more items as needed
@@ -103,31 +103,42 @@ $(document).ready(function() {
         const targetElement = document.getElementById(targetElementId);
     
         if (!targetElement) {
-          console.error(`Element with ID '${targetElementId}' not found.`);
-          return;
+            console.error(`Element with ID '${targetElementId}' not found.`);
+            return;
         }
     
         products.forEach(item => {
-          const li = document.createElement('li');
-          li.className = 'Prod';
+            const li = document.createElement('li');
+            li.className = 'Prod';
     
-          const imgDiv = document.createElement('div');
-          imgDiv.className = 'Prod_Img';
-          imgDiv.innerHTML = `<img src="${item.image}" alt="Jeric Flowershop Logo">`;
+            const imgDiv = document.createElement('div');
+            imgDiv.className = 'Prod_Img';
+            imgDiv.innerHTML = `<img src="${item.image}" alt="Product logo" width="300px" height="200px">`;
     
-          const nameDiv = document.createElement('div');
-          nameDiv.textContent = item.name;
+            const detailsDiv = document.createElement('div');
+            detailsDiv.className = 'Prod_Details';
     
-          const priceDiv = document.createElement('div');
-          priceDiv.textContent = item.price;
+            const nameDiv = document.createElement('div');
+            nameDiv.textContent = item.name;
     
-          li.appendChild(imgDiv);
-          li.appendChild(nameDiv);
-          li.appendChild(priceDiv);
+            const priceDiv = document.createElement('div');
+            priceDiv.textContent = item.price;
     
-          targetElement.appendChild(li);
+            const descriptionDiv = document.createElement('div');
+            descriptionDiv.className = 'Prod_Description';
+            descriptionDiv.textContent = item.description;
+    
+            detailsDiv.appendChild(nameDiv);
+            detailsDiv.appendChild(priceDiv);
+    
+            li.appendChild(imgDiv);
+            li.appendChild(detailsDiv);
+            li.appendChild(descriptionDiv);
+    
+            targetElement.appendChild(li);
         });
-      }
+    }
+    
 
       populateProductList(bouquetData, 'BouquetProd');
       populateProductList(weddingData, 'WeddingProd');

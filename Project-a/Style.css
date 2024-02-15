@@ -59,7 +59,6 @@ body{
 .Logo{
     display: grid;
     padding: 5%;
-    margin-bottom: 5%;
     width: 100vw;
     font-size: 50px;
     justify-self: center;
@@ -72,8 +71,8 @@ body{
     filter: drop-shadow( 5px 5px 3px #8a6f6c);
 }
 
-.description{
-    background-color: #F283B6;
+.description {
+    background-image: linear-gradient(to bottom, #fdf0f4, #f782ad);
     display: flex;
     padding: 5%;
     width: 100vw;
@@ -81,24 +80,27 @@ body{
     justify-self: center;
     justify-content: center;
     text-align: center;
+    
+    /* Add box-shadow */
+    box-shadow: 0px 10px 10px -5px #a27a89;
 }
 .breakLineTop{
     background-color: #F283B6;
-    opacity: .6;
+    opacity: .4;
     display: inline;
-    padding: 10px;
+    padding: 20px;
     width: 100vw;
-    filter: drop-shadow( 0px 10px 10px #9a8582);
+    filter: drop-shadow( 0px 0px 10px #9a8582);
     justify-self: center;
     justify-content: center;
 }
 .breakLineBottom{
     background-color: #F283B6;
-    opacity: .6;
+    opacity: .4;
     display: inline;
-    padding: 10px;
+    padding: 20px;
     width: 100vw;
-    filter: drop-shadow( 0px 10px 10px #9a8582);
+    filter: drop-shadow( 0px 0px 10px #9a8582);
     justify-self: center;
     justify-content: center;
 }
@@ -168,7 +170,6 @@ body{
 }
 .Prod_Img{
     color: darkblue;
-    
 }
 .Highlighted {
     background-color: #F283B6;
