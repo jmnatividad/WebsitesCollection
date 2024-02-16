@@ -132,6 +132,7 @@ body{
 .ProdContainer{
     width: 50%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -155,20 +156,34 @@ body{
     list-style: none;
 }
 .Prod {
-    display: grid;
+    display: block;
+    margin: 10px auto;
+    text-align: start;
     width: 350px;
-    height: 400px;
+    height: 450px;
     border-radius: 22px;
     font-size: 20px;
     color: black;
     filter: drop-shadow( 0px 10px 10px #9a8582);
-    text-align: start;
     background-color: #ffffff;
     padding: 15px;
     margin: 10px;
     
 }
 .Prod_Img{
+    display: flex;
+    justify-content: center;
+    min-width: 60% ;
+    min-height: 70% ;
+}
+.Prod_Price{
+    color: rgb(13, 187, 13);
+    padding-bottom:2%;
+}
+.Prod_Name{
+    font-style: italic;
+    font-weight: bolder;
+    padding-bottom:2%;
 }
 .Highlighted {
     background-color: #F283B6;

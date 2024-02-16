@@ -1,5 +1,5 @@
 var bouquetData = [
-    { name: 'bouquetData 1', price: '$10', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'bouquetData 1', price: '$10', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/Bouquet/3pcsRedRosePinkPolkadots-removebg-preview.png' },
     { name: 'bouquetData 2', price: '$15', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
     { name: 'bouquetData 3', price: '$20', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
     { name: 'bouquetData 4', price: '$25', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
@@ -113,15 +113,17 @@ $(document).ready(function() {
     
             const imgDiv = document.createElement('div');
             imgDiv.className = 'Prod_Img';
-            imgDiv.innerHTML = `<img src="${item.image}" alt="Product logo" width="300px" height="200px">`;
+            imgDiv.innerHTML = `<img src="${item.image}" alt="Product logo" width="60%" height="60%">`;
     
             const detailsDiv = document.createElement('div');
             detailsDiv.className = 'Prod_Details';
     
             const nameDiv = document.createElement('div');
+            nameDiv.className = 'Prod_Name';
             nameDiv.textContent = item.name;
     
             const priceDiv = document.createElement('div');
+            priceDiv.className = 'Prod_Price';
             priceDiv.textContent = item.price;
     
             const descriptionDiv = document.createElement('div');
