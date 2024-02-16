@@ -1,6 +1,6 @@
 var bouquetData = [
     { name: 'bouquetData 1', price: '$10', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/Bouquet/3pcsRedRosePinkPolkadots-removebg-preview.png' },
-    { name: 'bouquetData 2', price: '$15', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'bouquetData 2', price: '$15', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/Bouquet/3pcsRedRosePinkPolkadots-removebg-preview.png' },
     { name: 'bouquetData 3', price: '$20', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
     { name: 'bouquetData 4', price: '$25', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
     { name: 'bouquetData 5', price: '$30', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
@@ -11,7 +11,7 @@ var bouquetData = [
 ];
 
 var weddingData = [
-    { name: 'weddingData 1', price: '$10', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'weddingData 1', price: '$10', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/Bouquet/3pcsRedRosePinkPolkadots-removebg-preview.png' },
     { name: 'weddingData 2', price: '$15', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
     { name: 'weddingData 3', price: '$20', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
     { name: 'weddingData 4', price: '$25', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
