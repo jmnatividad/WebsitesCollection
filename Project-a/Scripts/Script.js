@@ -110,7 +110,9 @@ $(document).ready(function() {
         products.forEach(item => {
             const li = document.createElement('li');
             li.className = 'Prod';
-    
+            
+            
+
             const imgDiv = document.createElement('div');
             imgDiv.className = 'Prod_Img';
             imgDiv.innerHTML = `<img src="${item.image}" alt="Product logo" width="60%" height="60%">`;
@@ -146,6 +148,16 @@ $(document).ready(function() {
       populateProductList(weddingData, 'WeddingProd');
       populateProductList(funeralData, 'FuneralProd');
 
+
+      var products = document.getElementsByClassName("Prod");
+
+      for (var i = 0; i < products.length; i++) {
+          products[i].addEventListener("click", function() {
+              this.classList.toggle("enlarged");
+          });
+      }
+      
+    
 });
 
 
@@ -154,6 +166,7 @@ window.addEventListener('scroll', function() {
     var header = document.querySelector('.Header');
     header.classList.toggle('sticky', window.scrollY > 0);
 });
+
 
 
 
