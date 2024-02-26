@@ -119,6 +119,7 @@ body{
 
 /* Navbar section */
 .navbar-item{
+    padding-top: 3px;
     width:30%;
     display: inline-flex;
     list-style-type: none;

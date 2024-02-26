@@ -150,12 +150,42 @@ $(document).ready(function() {
 
 
       var products = document.getElementsByClassName("Prod");
-
+      var overlays = document.getElementsByClassName("Overlay-Item");
+      
+      // Function to prevent default scroll behavior
+      function preventDefault(event) {
+          event.preventDefault();
+      }
+      
+      // Function to disable scrolling
+      function disableScroll() {
+          document.body.style.overflow = 'hidden'; // Disable scrolling on the body element
+          document.addEventListener('touchmove', preventDefault, { passive: false }); // Prevent touch events that cause scrolling
+          document.addEventListener('wheel', preventDefault, { passive: false }); // Prevent mouse wheel events that cause scrolling
+      }
+      
+      // Function to enable scrolling
+      function enableScroll() {
+          document.body.style.overflow = ''; // Enable scrolling on the body element
+          document.removeEventListener('touchmove', preventDefault); // Remove touch event listener
+          document.removeEventListener('wheel', preventDefault); // Remove wheel event listener
+      }
+      
+      // Loop through each .Prod element and attach a click event listener
       for (var i = 0; i < products.length; i++) {
           products[i].addEventListener("click", function() {
               this.classList.toggle("enlarged");
+              for (var j = 0; j < overlays.length; j++) {
+                  overlays[j].classList.toggle("Hide-Overlay");
+              }
+              if (document.body.style.overflow === 'hidden') {
+                  enableScroll(); // Enable scrolling if it was disabled
+              } else {
+                  disableScroll(); // Disable scrolling if it was enabled
+              }
           });
       }
+      
       
     
 });
