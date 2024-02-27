@@ -35,6 +35,17 @@ var funeralData = [
     // Add more items as needed
 ];  
 
+fetch('../Project-a/Scripts/Scripts.js')
+  .then(response => response.json())
+  .then(data => {
+    // Work with the JSON data here
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('There was a problem fetching the JSON file:', error);
+  });
+
+
 $(document).ready(function() {
 
     
