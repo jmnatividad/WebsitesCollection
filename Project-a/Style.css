@@ -9,7 +9,17 @@ html{
 ::-webkit-scrollbar {
     display: none;
 }
-
+/* CSS variables
+*/
+:root{
+    --Primary: #F283B6;
+    --Secondary: #fdf0f4;
+    --Background1:#fdf0f4;
+    --ProdBackground:#ffffff;
+    --PriceText: rgb(13, 187, 13);
+    --Text1: black;
+    --DropShadow: #9a8582;
+}
 
 
 body{
@@ -18,8 +28,7 @@ body{
     /* background-image: linear-gradient(to bottom, #1a1b1b, #000000); */
     flex-direction: grid;
     /* overflow-x: hidden; */
-    background-color: #fdf0f4;
-    
+    background-color: var( --Background1);
 }
 
 
@@ -33,7 +42,7 @@ body{
 
 /* Font colors and display */
 .container a{
-    color: black;
+    color: var(--Text1);
     text-decoration: none;
 }
 .Contact_Us{
@@ -68,7 +77,7 @@ body{
 .LogoImg{
     width: auto;
     height: 200px;
-    filter: drop-shadow( 5px 5px 3px #8a6f6c);
+    filter: drop-shadow( 5px 5px 3px var(--DropShadow));
 }
 
 .description {
@@ -82,25 +91,25 @@ body{
     padding-left: 15%;
     padding-right: 15%;
     /* Add box-shadow */
-    box-shadow: 0px 10px 10px -5px #a27a89;
+    box-shadow: 0px 10px 10px -5px var(--DropShadow);
 }
 .breakLineTop{
-    background-color: #F283B6;
+    background-color: var(--Primary);
     opacity: .4;
     display: inline;
     padding: 20px;
     width: 100vw;
-    filter: drop-shadow( 0px 0px 10px #9a8582);
+    filter: drop-shadow( 0px 0px 10px var(--DropShadow));
     justify-self: center;
     justify-content: center;
 }
 .breakLineBottom{
-    background-color: #F283B6;
+    background-color: var(--Primary);
     opacity: .4;
     display: inline;
     padding: 20px;
     width: 100vw;
-    filter: drop-shadow( 0px 0px 10px #9a8582);
+    filter: drop-shadow( 0px 0px 10px var(--DropShadow));
     justify-self: center;
     justify-content: center;
 }
@@ -112,7 +121,7 @@ body{
     width: 50%;
     margin-top: 5%;
     min-height:150px;
-    filter: drop-shadow( 0px 10px 10px #9a8582);
+    filter: drop-shadow( 0px 10px 10px var(--DropShadow));
     justify-self: center;
     justify-content: space-evenly;
 }
@@ -126,7 +135,7 @@ body{
     padding-left: 20px ;
     padding-right: 20px;
     border-width: 100px;
-    border-color: black;
+    border-color: var(--Text1);
 }
 
 .ProdContainer{
@@ -176,9 +185,9 @@ body{
     height: 450px;
     border-radius: 22px;
     font-size: 20px;
-    color: black;
-    filter: drop-shadow(0px 10px 10px #9a8582);
-    background-color: #ffffff;
+    color: var(--Text1);
+    filter: drop-shadow(0px 10px 10px var(--DropShadow));
+    background-color: var(--ProdBackground);
     padding: 15px;
     margin: 10px;
     transition: transform 0.3s ease; /* Add transition to the default state */
@@ -211,7 +220,7 @@ body{
     min-height: 70% ;
 }
 .Prod_Price{
-    color: rgb(13, 187, 13);
+    color: var(--PriceText);
     padding-bottom:2%;
 }
 .Prod_Name{
@@ -220,7 +229,7 @@ body{
     padding-bottom:2%;
 }
 .Highlighted {
-    background-color: #F283B6;
+    background-color: var(--Primary);
     color: white;
     font-size: xx-large;
     font-weight: bolder;
