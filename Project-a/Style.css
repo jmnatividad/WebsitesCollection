@@ -164,6 +164,7 @@ body{
     background-color: #70bfe461;
 }
 .Hide-Overlay{
+    backdrop-filter: blur(3px);
     width: 100%;
     height: 100%;
 }
