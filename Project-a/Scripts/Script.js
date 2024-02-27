@@ -1,11 +1,11 @@
 var bouquetData = [
-    { name: 'bouquetData 1', price: '$10', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/Bouquet/3pcsRedRosePinkPolkadots-removebg-preview.png' },
-    { name: 'bouquetData 2', price: '$15', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/Bouquet/3pcsRedRosePinkPolkadots-removebg-preview.png' },
-    { name: 'bouquetData 3', price: '$20', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
-    { name: 'bouquetData 4', price: '$25', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
-    { name: 'bouquetData 5', price: '$30', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
-    { name: 'bouquetData 6', price: '$35', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
-    { name: 'bouquetData 7', price: '$35', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/PinkWhiteLogoWithName.png' },
+    { name: 'bouquetData 1', price: '$10', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/Bouquet/Sunflower/1pcs/1pcsSunflowerBlackGold-removebg-preview.png' },
+    { name: 'bouquetData 2', price: '$15', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/Bouquet/Sunflower/1pcs/1pcsSunflowerPinklight-removebg-preview.png' },
+    { name: 'bouquetData 3', price: '$20', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/Bouquet/Sunflower/1pcs/1pcsSunflowerRedA-removebg-preview.png' },
+    { name: 'bouquetData 4', price: '$25', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/Bouquet/Sunflower/1pcs/1pcsSunflowerRedB-removebg-preview.png' },
+    { name: 'bouquetData 5', price: '$30', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/Bouquet/Sunflower/1pcs/1pcsSunflowerWhite-removebg-preview.png' },
+    { name: 'bouquetData 6', price: '$35', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/Bouquet/Sunflower/1pcs/1pcSunflowerRed-removebg-preview.png' },
+    { name: 'bouquetData 7', price: '$35', description: '3pcs Rose with aster and wraped in korean wrapper', image: '../Project-a/Images/Bouquet/Sunflower/1pcs/1pcsSunflowerBlackGold-removebg-preview.png' },
  
     // Add more items as needed
 ];
@@ -35,16 +35,6 @@ var funeralData = [
     // Add more items as needed
 ];  
 
-fetch('../Project-a/Scripts/Scripts.js')
-  .then(response => response.json())
-  .then(data => {
-    // Work with the JSON data here
-    console.log(data);
-  })
-  .catch(error => {
-    console.error('There was a problem fetching the JSON file:', error);
-  });
-
 
 $(document).ready(function() {
 
@@ -72,7 +62,7 @@ $(document).ready(function() {
 
 
 
-    bridalElement.classList.add("Highlighted");
+    bouquetElement.classList.add("Highlighted");
     hideElement(WeddingProd);
     hideElement(FuneralProd);
    
@@ -126,7 +116,7 @@ $(document).ready(function() {
 
             const imgDiv = document.createElement('div');
             imgDiv.className = 'Prod_Img';
-            imgDiv.innerHTML = `<img src="${item.image}" alt="Product logo" width="60%" height="60%">`;
+            imgDiv.innerHTML = `<img src="${item.image}" alt="Product logo" width="40%" height="40%">`;
     
             const detailsDiv = document.createElement('div');
             detailsDiv.className = 'Prod_Details';
@@ -197,20 +187,4 @@ $(document).ready(function() {
           });
       }
       
-      
-    
 });
-
-
-
-window.addEventListener('scroll', function() {
-    var header = document.querySelector('.Header');
-    header.classList.toggle('sticky', window.scrollY > 0);
-});
-
-
-
-
-
-
-
