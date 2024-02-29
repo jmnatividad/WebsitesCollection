@@ -38,14 +38,18 @@ var funeralData = [
 
 $(document).ready(function() {
 
-    
+    //variables for the buttons in the arrangement type
     var bouquetElement = document.getElementById("Bouquet");
     var bridalElement = document.getElementById("Bridal");
     var funeralElement = document.getElementById("Funeral");
-    
+    //variables for the products to be displayed
     var BouquetProd = document.getElementById("BouquetProd");
     var WeddingProd = document.getElementById("WeddingProd");
     var FuneralProd = document.getElementById("FuneralProd");
+    //variable for the borderHighlight for the buttons in arrangment type
+    var BouquetBorder = document.getElementById("border-Bouquet");
+    var WeddingBorder = document.getElementById("border-Wedding");
+    var FuneralBorder = document.getElementById("border-Funeral");
 
 
     //to hide display
@@ -63,6 +67,7 @@ $(document).ready(function() {
 
 
     bouquetElement.classList.add("Highlighted");
+    BouquetBorder.classList.add("border-Line1");
     hideElement(WeddingProd);
     hideElement(FuneralProd);
    
@@ -70,6 +75,11 @@ $(document).ready(function() {
         bouquetElement.classList.add("Highlighted");
         bridalElement.classList.remove("Highlighted");
         funeralElement.classList.remove("Highlighted");
+
+        //removing the borderOutline
+        BouquetBorder.classList.add("border-Line1");
+        WeddingBorder.classList.remove("border-Line1");
+        FuneralBorder.classList.remove("border-Line1");
 
         Showelement(BouquetProd)
         // for displaying and hiding the prod 
@@ -83,6 +93,11 @@ $(document).ready(function() {
         bouquetElement.classList.remove("Highlighted");
         funeralElement.classList.remove("Highlighted");
 
+        //removing the borderOutline
+        WeddingBorder.classList.add("border-Line1");
+        BouquetBorder.classList.remove("border-Line1");
+        FuneralBorder.classList.remove("border-Line1");
+
         Showelement(WeddingProd)
         // for displaying and hiding the prod 
         hideElement(BouquetProd);
@@ -94,6 +109,12 @@ $(document).ready(function() {
         funeralElement.classList.add("Highlighted");
         bridalElement.classList.remove("Highlighted");
         bouquetElement.classList.remove("Highlighted");
+
+        //removing the borderOutline
+        FuneralBorder.classList.add("border-Line1");
+        BouquetBorder.classList.remove("border-Line1");
+        WeddingBorder.classList.remove("border-Line1");
+
         Showelement(FuneralProd)
         // for displaying and hiding the prod 
         hideElement(BouquetProd);
